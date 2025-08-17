@@ -1,0 +1,22 @@
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return "Welcome to the Fitness App!"
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+# Fitness App
+
+A simple fitness tracking app built with Flask.
+
+## How to run
+```bash
+pip install -r requirements.txt
+python app.py
+```
+
+flask
